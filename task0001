@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>双翼页面布局</title>
+    <link rel="stylesheet" type="text/css" href="MyTest.css"/>
+</head>
+<body>
+    <div id="page" class="bodyset" style="height: 100%">
+        <div id="head">
+            <p  class="header">Header</p>
+        </div>
+        <div id="body" style="overflow: hidden">
+            <div class="main">
+                <div class="main-wrap">
+                    <p>Main</p>
+                <pre>
+.main{
+    float:left;
+    width:100%;
+    background-color: aqua;
+}
+                    .main-wrap {
+    margin: 0 200px 0 200px;
+}
+                </pre>
+                </div>
+            </div>
+            <div class="sub">
+                <p>Sub</p>
+                <pre>.sub{
+    float:left;
+    width:200px;
+    margin-left: -100%;
+    background-color: aliceblue;
+}
+                </pre>
+            </div>
+            <div class="extra">
+                <p>Extra</p>
+                <pre>
+.extra{
+    float: left;
+    width:200px;
+    margin-left: -200px;
+    background-color: chocolate;
+}
+                </pre>
+            </div>
+        </div>
+        <div class="header" id ="bottom">
+            <p>bottom</p>
+        </div>
+    </div>
+</body>
+</html>
